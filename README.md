@@ -1,49 +1,36 @@
 # RAGing Agent - EU Statistics Explorer
 
-## 🌌 Overview
+## 🌌 Live Demo
+Visit the live application: [RAGing Agent](https://raging-agent.pages.dev/)
 
-RAGing Agent is an innovative AI-powered statistics explorer developed for exploring European Union data. It combines Google's Gemini AI with an immersive 3D interface to provide an engaging way to query and visualize EU statistics.
+## 🚀 Overview
+RAGing Agent is an innovative AI-powered statistics explorer that combines Google's Gemini AI with an immersive 3D interface to explore European Union statistics. The application features a dynamic quantum-themed UI and provides intelligent responses to queries about EU economic and social metrics.
 
-## 🚀 Key Features
-
-- **AI-Powered Responses**: Uses Google's Gemini Pro model for intelligent query processing
-- **Immersive 3D Interface**: Interactive quantum sphere and dimensional portal visualizations
-- **Real-time Statistics**: Access to key EU metrics including:
+## 🎯 Key Features
+- **AI-Powered Analysis**: Leverages Google's Gemini Pro for intelligent query processing
+- **Immersive 3D Interface**: Features interactive quantum sphere and dimensional portal
+- **Real-time Statistics**: Covers key EU metrics:
   - GDP Growth
   - Unemployment Rates
   - Inflation Data
   - Population Statistics
   - Trade Information
 - **Dynamic Animations**: Smooth transitions and particle effects
-- **Responsive Design**: Works seamlessly on all devices
+- **Responsive Design**: Works on all devices
 
-## 🛠️ Technology Stack
+## 🛠️ Tech Stack
+- **Frontend**: Next.js 14, React, TypeScript
+- **AI/ML**: Google Gemini Pro
+- **3D Graphics**: Three.js, React Three Fiber, React Three Drei
+- **Styling**: Tailwind CSS, Framer Motion
+- **Deployment**: Cloudflare Pages
 
-- **Framework**: Next.js 14
-- **AI Model**: Google Gemini Pro
-- **3D Graphics**: 
-  - Three.js
-  - React Three Fiber
-  - React Three Drei
-- **Styling**: 
-  - Tailwind CSS
-  - Framer Motion
-- **Language**: TypeScript
-- **API Integration**: Axios
-
-## 🎯 Core Functionality
-
-The application provides insights into EU statistics through:
-1. Natural language queries
-2. AI-powered response generation
-3. Interactive 3D visualizations
-4. Real-time data updates
-
-## 🚀 Getting Started
+## 💻 Local Development
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/raging-agent.git
+git clone https://github.com/codewithmirza/RAGing-Agent.git
+cd RAGing-Agent
 ```
 
 2. Install dependencies:
@@ -51,9 +38,9 @@ git clone https://github.com/your-username/raging-agent.git
 npm install
 ```
 
-3. Set up environment variables in `.env.local`:
+3. Create `.env.local` and add your Gemini API key:
 ```env
-GEMINI_API_KEY=your_gemini_api_key
+GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
 4. Run the development server:
@@ -61,8 +48,9 @@ GEMINI_API_KEY=your_gemini_api_key
 npm run dev
 ```
 
-## 💡 Usage Examples
+5. Open [http://localhost:3000](http://localhost:3000)
 
+## 🤖 Usage Examples
 Try asking questions like:
 - "What's the current GDP growth in the EU?"
 - "Tell me about unemployment rates"
@@ -70,55 +58,47 @@ Try asking questions like:
 - "What's the population of the EU?"
 - "Show me trade statistics"
 
-## 🎨 Design Features
+## 🎨 Features
+- **3D Visualization**: Interactive quantum sphere and portal
+- **Real-time Responses**: Instant AI-powered answers
+- **Particle Effects**: Dynamic background animations
+- **Responsive Design**: Mobile-first approach
+- **Error Handling**: Graceful fallbacks
 
-- **3D Background**: Dynamic quantum sphere and dimensional portal
-- **Particle Effects**: Interactive background particles
-- **Gradient Text**: Beautiful color transitions
-- **Loading Animations**: Smooth state transitions
-- **Responsive Layout**: Mobile-friendly design
+## 🔧 Technical Details
+- Server-side rendering with Next.js
+- AI integration with Google Gemini
+- 3D graphics with Three.js
+- Animation system using Framer Motion
+- Styling with Tailwind CSS
 
-## 🔧 Technical Implementation
+## 📱 Deployment
+The application is deployed on Cloudflare Pages with automatic deployments from the main branch.
 
-- **AI Integration**: Google Gemini Pro for natural language processing
-- **State Management**: React hooks for efficient state handling
-- **3D Rendering**: Three.js with post-processing effects
-- **Animation System**: Framer Motion for smooth transitions
-- **Styling**: Tailwind CSS for responsive design
-
-## 🌟 Future Enhancements
-
-- Real-time Eurostat API integration
-- Additional visualization options
-- More detailed statistical breakdowns
-- Historical data comparisons
-- Custom data filtering
-
-## 👥 Development
-
-Created by [Your Name] for exploring EU statistics in an engaging way.
+## 👥 Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## 📄 License
-
-MIT License - See LICENSE file for details
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📞 Support
-
-For support, please open an issue in the GitHub repository.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
-
 - Google Gemini for AI capabilities
-- Three.js community for 3D graphics
-- Next.js team for the framework
-- Eurostat for statistical data
+- Three.js community
+- Next.js team
+- Cloudflare Pages for hosting
 
 ## 🔗 Links
+- [GitHub Repository](https://github.com/codewithmirza/RAGing-Agent)
+- [Live Demo](https://raging-agent.pages.dev/)
+- [Report Issues](https://github.com/codewithmirza/RAGing-Agent/issues)
 
-- [Live Demo](your-deployment-url)
-- [GitHub Repository](your-repo-url)
-- [Documentation](your-docs-url)
+## 👤 Author
+**Mirza Abdul Qadir**
+- GitHub: [@codewithmirza](https://github.com/codewithmirza)
+
+---
+Made with ❤️ and AI
