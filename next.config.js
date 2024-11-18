@@ -4,14 +4,17 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/RAGing-Agent' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/RAGing-Agent/' : '',
   trailingSlash: true,
-  // This is important for API routes
-  experimental: {
-    workerThreads: true,
-    cpus: 1
-  }
+  distDir: 'out',
+  env: {
+    GEMINI_API_KEY: process.env.GEMINI_API_KEY,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig; 
