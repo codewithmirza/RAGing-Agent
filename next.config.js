@@ -1,16 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // Enable static exports
+  output: 'export',
   images: {
     unoptimized: true,
   },
-  // Required for GitHub Pages
-  basePath: process.env.NODE_ENV === 'production' ? '/raging-agent' : '',
-  // Add this to ensure proper client-side rendering
-  webpack: (config) => {
-    config.resolve.fallback = { fs: false, net: false, tls: false };
-    return config;
-  },
+  basePath: process.env.NODE_ENV === 'production' ? '/RAGing-Agent' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/RAGing-Agent/' : '',
+  trailingSlash: true,
+  // This is important for API routes
+  experimental: {
+    workerThreads: true,
+    cpus: 1
+  }
 };
 
 module.exports = nextConfig; 
