@@ -5,7 +5,6 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  distDir: 'out',
   env: {
     GEMINI_API_KEY: process.env.GEMINI_API_KEY,
   },

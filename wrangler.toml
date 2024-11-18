@@ -1,0 +1,12 @@
+name = "raging-agent"
+compatibility_date = "2024-11-18"
+
+[vars]
+GEMINI_API_KEY = ""
+
+[[routes]]
+pattern = "/api/*"
+zone_name = "raging-agent.pages.dev"
+
+[site]
+bucket = "./out" 

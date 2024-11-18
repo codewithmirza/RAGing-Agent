@@ -71,14 +71,18 @@ export default function RAGingAgentExtreme() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query }),
-      })
-      const data = await res.json()
-      setResponse(data.response || data.error || 'Failed to get response')
+      });
+      const data = await res.json();
+      if (data.success) {
+        setResponse(data.response);
+      } else {
+        setResponse('Error: ' + (data.error || 'Failed to get response'));
+      }
     } catch (error) {
-      setResponse('Error: Failed to connect to server')
+      setResponse('Error: Failed to connect to server');
     }
-    setIsLoading(false)
-  }
+    setIsLoading(false);
+  };
 
   if (!isInitialized) {
     return <LoadingScreen />
