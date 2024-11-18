@@ -97,7 +97,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Report Issues](https://github.com/codewithmirza/RAGing-Agent/issues)
 
 ## 👤 Author
-**Mirza Abdul Qadir**
+**Mirza Anwaarullah  Baig**
 - GitHub: [@codewithmirza](https://github.com/codewithmirza)
 
 ---
