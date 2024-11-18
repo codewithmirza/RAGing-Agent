@@ -7,11 +7,17 @@ import { OrbitControls, Text, useGLTF, MeshDistortMaterial, GradientTexture, Sph
 import * as THREE from 'three'
 import { EffectComposer, Bloom, Glitch, Noise } from '@react-three/postprocessing'
 import { Vector2 } from 'three'
+import { queryEurostat } from '@/lib/eurostat'
 
 // Simulated AI response generation
 const generateAIResponse = async (query: string) => {
-  await new Promise(resolve => setTimeout(resolve, 2000))
-  return `Multiversal wisdom on: "${query}"`
+  try {
+    const result = await queryEurostat(query);
+    return result;
+  } catch (error) {
+    console.error('Error:', error);
+    return "I apologize, but I couldn't process that query. Please try again.";
+  }
 }
 
 // 3D Quantum Sphere component
